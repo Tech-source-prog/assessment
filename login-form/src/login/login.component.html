@@ -1,0 +1,34 @@
+<div class="login-container">
+    <!-- Header for the login form -->
+    <h2>Login</h2>
+    
+    <!-- Form with Angular reactive forms binding and submit handler -->
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      
+      <!-- Username field with validation message -->
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" formControlName="username">
+        <!-- Error message displayed if username is invalid and has been touched or dirtied -->
+        <div *ngIf="username.invalid && (username.dirty || username.touched)" class="error">
+          Username is required
+        </div>
+      </div>
+      
+      <!-- Password field with validation message -->
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" formControlName="password">
+        <!-- Error message displayed if password is invalid and has been touched or dirtied -->
+        <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error">
+          Password is required
+        </div>
+      </div>
+      
+      <!-- Submit button, disabled if the form is invalid -->
+      <button type="submit" [disabled]="loginForm.invalid">Login</button>
+    </form>
+    
+    <!-- Error message displayed if there is an error -->
+    <p *ngIf="errorMessage">{{ errorMessage }}</p>
+</div>

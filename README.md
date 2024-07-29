@@ -25,9 +25,9 @@ Follow these instructions to set up and run the application locally.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-##Credentials
-username : admin
-password : passwors123
+## Credentials
+-username : admin
+-password : passwors123
 
 ## Code scaffolding
 

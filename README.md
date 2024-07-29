@@ -27,7 +27,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Credentials
 -username : admin
--password : passwors123
+password : password123
 
 ## Code scaffolding
 
